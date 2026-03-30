@@ -6,6 +6,7 @@ import Bannerers from './component/Bannerers'
 import Main from './component/Main'
 import Modelse from './component/Modelse'
 import NavBar from './component/NavBar'
+import Futter from './Futter'
 
 const getModels = async ()=>{
   const res =await fetch("/models.json")
@@ -35,6 +36,7 @@ function App() {
     <Baner/>
     <Baners/>
     <Bannerers/>
+    <Futter/>
     </>
   )
 }
