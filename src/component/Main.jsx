@@ -4,10 +4,9 @@ import bannericon from "../assets/Rectangle 4.png"
 const Main = () => {
   return (
     <div className='max-w-[1600px] mx-auto flex mt-[85px] items-center gap-6'>
-      <div className='space-y-3 mx-auto'>
-        <div className='flex '>
-          <img className='w-[10px] h-[10]' src={bannericon} />
-          <p className='bg-gray-400 rounded-full'>New: AI-Powered Tools Available</p>
+      <div className='space-y-3 mx-auto items-center'>
+        <div className='flex'>
+          <p className='bg-gray-400 rounded-full flex items-center gap-2'> <img className='w-[15px] h-[15px] bg-[#9514FA] rounded-full' src={bannericon} />New: AI-Powered Tools Available</p>
         </div>
         <h1 className='font-extrabold text-6xl'>Supercharge Your <br /> Digital Workflow</h1>
         <p>Access premium AI tools, design assets, templates, and productivity
