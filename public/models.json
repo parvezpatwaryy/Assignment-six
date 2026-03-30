@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p_001",
+    "img": "https://i.ibb.co.com/70bZcYz/Group-1.png",
+    "name": "Starter Plan",
+    "description": "Perfect for freelancers starting their journey.",
+    "price": 0,
+    "period": "Unlimited AI generations",
+    "tag": "50+ writing templates",
+    "tagType": "Grammar checker"
+  },
+  {
+    "id": "p_002",
+    "img": "https://i.ibb.co.com/s9LPfP5M/Group-7.png",
+    "name": "Pro Designer",
+    "description": "Advanced tools for professional creative workflows.",
+    "price": 19,
+    "period": "2000+ templates",
+    "tag": "Monthly updates",
+    "tagType": "Commercial license"
+  },
+  {
+    "id": "p_003",
+    "img": "https://i.ibb.co.com/mVLCTkV4/Group-7-1.png",
+    "name": "Agency Annual",
+    "description": "Complete solution for high-scaling design agencies.",
+    "price": 199,
+    "period": "10M+ assets",
+    "tag": "Commercial use",
+    "tagType": "No attribution"
+  },
+  {
+    "id": "p_004",
+    "img": "https://i.ibb.co.com/Kz3CSCyk/Group-7-2.png",
+    "name": "Lifetime Asset",
+    "description": "One-time payment for all future updates.",
+    "price": 499,
+    "period": "50+ automations",
+    "tag": "API access",
+    "tagType": "Custom workflows"
+  },
+  {
+    "id": "p_005",
+    "img": "https://i.ibb.co.com/39vchNtX/Group-7-3.png",
+    "name": "SEO Master",
+    "description": "Boost your website ranking with AI-driven insights.",
+    "price": 45,
+    "period": "100+ templates",
+    "tag": "ATS optimization",
+    "tagType": "Export to PDF"
+  },
+  {
+    "id": "p_006",
+    "img": "https://i.ibb.co.com/JWvP9CYr/Group-7-4.png",
+    "name": "Cloud Storage XL",
+    "description": "Secure and fast storage for large media files.",
+    "price": 120,
+    "period": "5000+ assets",
+    "tag": "Scheduler included",
+    "tagType": "Analytics dashboard"
+  }
+]

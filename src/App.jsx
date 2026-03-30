@@ -1,9 +1,16 @@
 import './App.css'
+import Baner from './component/Baner'
 import Banner from './component/Banner'
 import Main from './component/Main'
+import Modelse from './component/Modelse'
 import NavBar from './component/NavBar'
 
+const getModels = async ()=>{
+  const res =await fetch("/models.json")
+  return res.json()
+}
 
+const modelPromis = getModels()
 function App() {
 
 
@@ -22,6 +29,8 @@ function App() {
         </div>
       </div>
     </div>
+    <Modelse modelPromis={modelPromis}/>
+    <Baner/>
     </>
   )
 }
