@@ -3,7 +3,7 @@ const Modelse = ({ modelPromis }) => {
   const models = use(modelPromis)
   console.log(models)
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1600px] h-auto mx-auto'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1250px] h-auto mx-auto'>
       {
         models.map(model => (
           <div key={model.id} className=''>
@@ -16,9 +16,9 @@ const Modelse = ({ modelPromis }) => {
                 <h1 className='font-bold text-2xl'>${model.price}</h1>
                 <p>/Mo</p>
               </span>
-              <li className='font-semibold text-gray-400'>{model.period}</li>
-              <li className='font-semibold text-gray-400'>{model.tag}</li>
-              <li className='font-semibold text-gray-400'>{model.tagType}</li>
+              <p className='font-semibold text-gray-400'>{model.period}</p>
+              <p className='font-semibold text-gray-400'>{model.tag}</p>
+              <p className='font-semibold text-gray-400'>{model.tagType}</p>
               <button className='btn btn-primary w-full rounded-full'>Buy Now</button>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import './App.css'
 import Baner from './component/Baner'
+import Baners from './component/Baners'
 import Banner from './component/Banner'
+import Bannerers from './component/Bannerers'
 import Main from './component/Main'
 import Modelse from './component/Modelse'
 import NavBar from './component/NavBar'
@@ -31,6 +33,8 @@ function App() {
     </div>
     <Modelse modelPromis={modelPromis}/>
     <Baner/>
+    <Baners/>
+    <Bannerers/>
     </>
   )
 }
