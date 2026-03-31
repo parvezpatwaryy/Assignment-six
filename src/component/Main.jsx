@@ -3,7 +3,7 @@ import bannerimg from "../assets/banner.png"
 import bannericon from "../assets/Rectangle 4.png"
 const Main = () => {
   return (
-    <div className='max-w-[1600px] mx-auto flex mt-[85px] items-center gap-6'>
+    <div className='max-w-[1600px]  flex mt-[85px] items-center justify-center gap-6'>
       <div className='space-y-3 mx-auto items-center'>
         <div className='flex'>
           <p className='bg-gray-400 rounded-full flex items-center gap-2'> <img className='w-[15px] h-[15px] bg-[#9514FA] rounded-full' src={bannericon} />New: AI-Powered Tools Available</p>

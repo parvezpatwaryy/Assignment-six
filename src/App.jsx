@@ -10,6 +10,9 @@ import NavBar from './component/NavBar'
 import Futter from './Futter'
 import Card from './component/Card'
 
+
+
+
 const getModels = async () => {
   const res = await fetch("/models.json")
   return res.json()
@@ -31,14 +34,14 @@ function App() {
           <div className="tabs tabs-box justify-center bg-transparent">
             <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Products" defaultChecked
               onClick={() => setActibTab("products")} />
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart (2)"
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label={`Cart (${cards.length})`} 
               onClick={() => setActibTab("card")}
             />
           </div>
         </div>
       </div>
       {actibTab === "products" && <Modelse modelPromis={modelPromis} cards={cards} setCards={setCards}/>}
-      {actibTab === "card" && <Card cards={cards} />}
+      {actibTab === "card" && <Card cards={cards} setCards={setCards}/>}
       <Baner />
       <Baners />
       <Bannerers />

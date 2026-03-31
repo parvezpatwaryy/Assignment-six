@@ -7,8 +7,8 @@ import imgto from "../assets/imgto.png"
 import imhthree from "../assets/imgthree.png"
 const Baner = () => {
   return (
-    <div className='max-w-[1200px] mt-[200px] mx-auto'>
-      <div className='w-[1200px] mx-auto text-center mt-3 space-y-3'>
+    <div className='md:w-[600px] lg:w-[1200px] mt-[200px] mx-auto'>
+      <div className='md:w-[600px] w-[1200px] mx-auto text-center mt-3 space-y-3'>
         <h1 className='font-bold text-5xl'>Get Started in 3 Steps</h1>
         <p className='text-gray-400'>Start using premium digital tools in minutes, not hours.</p>
       </div>

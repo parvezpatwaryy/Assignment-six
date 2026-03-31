@@ -4,7 +4,7 @@ import facebook from "./assets/Facebook.png"
 import tuiter from "./assets/Twitter.png"
 const Futter = () => {
   return (
-    <div className='max-w-[1600px] mx-auto bg-black p-10 md:p-20 flex flex-wrap justify-between items-start text-white'>
+    <div className='md:w-[600px] lg:w-[1600px] mx-auto bg-black p-10 md:p-20 flex flex-wrap justify-between items-start text-white'>
       
       <div className='max-w-xs mb-10'>
         <h1 className='text-2xl font-bold mb-4'>DigiTools</h1>

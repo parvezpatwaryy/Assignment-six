@@ -2,7 +2,7 @@ import React from 'react';
 import navicon from "../assets/icon.png"
 const NavBar = () => {
   return (
-    <div className='flex justify-between items-center max-w-[1600px] max-h-[92px] mx-auto p-10 shadow-xl'>
+    <div className='flex justify-between items-center sm:w-[600px] lg:w-[1600px] max-h-[92px] mx-auto p-10 shadow-xl'>
       <div className='font-extrabold text-3xl text-[#9514FA] items-center'>
         <h1>DigiTools</h1>
       </div>
