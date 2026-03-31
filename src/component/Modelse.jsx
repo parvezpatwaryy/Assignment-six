@@ -1,7 +1,9 @@
 import React, { use } from 'react';
-const Modelse = ({ modelPromis }) => {
+const Modelse = ({ modelPromis ,cards,setCards}) => {
   const models = use(modelPromis)
-  console.log(models)
+  const handleAddCard = (model) => {
+    setCards([...cards, model]);
+  }
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1250px] h-auto mx-auto'>
       {
@@ -19,7 +21,7 @@ const Modelse = ({ modelPromis }) => {
               <p className='font-semibold text-gray-400'>{model.period}</p>
               <p className='font-semibold text-gray-400'>{model.tag}</p>
               <p className='font-semibold text-gray-400'>{model.tagType}</p>
-              <button className='btn btn-primary w-full rounded-full'>Buy Now</button>
+              <button onClick={() => handleAddCard(model)} className='btn btn-primary w-full rounded-full'>Buy Now</button>
             </div>
           </div>
         ))

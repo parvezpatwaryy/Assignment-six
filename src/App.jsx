@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Baner from './component/Baner'
 import Baners from './component/Baners'
@@ -7,36 +8,41 @@ import Main from './component/Main'
 import Modelse from './component/Modelse'
 import NavBar from './component/NavBar'
 import Futter from './Futter'
+import Card from './component/Card'
 
-const getModels = async ()=>{
-  const res =await fetch("/models.json")
+const getModels = async () => {
+  const res = await fetch("/models.json")
   return res.json()
 }
 
 const modelPromis = getModels()
 function App() {
-
-
+  const [actibTab, setActibTab] = useState("products")
+  const [cards,setCards]= useState([])
   return (
     <>
-  <NavBar/>
-  <Main/>
-  <Banner/>
-  <div className='max-w-[1600px] max-h-[196px] mx-auto mt-20'>
-      <div className='text-center space-y-2'>
-        <h1 className='font-bold text-4xl'>Premium Digital Tools</h1>
-        <p className='font-semibold text-gray-400'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
-        <div className='flex items-center gap-3 pl-[650px]'>
-          <p className='bg-[#9514FA] rounded-full p-5 w-40 text-white font-semibold'>Products</p>
-          <p className=' rounded-full p-5 w-40 font-semibold'>Cart (2)</p>
+      <NavBar />
+      <Main />
+      <Banner />
+      <div className='max-w-[1600px] max-h-[196px] mx-auto mt-20'>
+        <div className='text-center space-y-2'>
+          <h1 className='font-bold text-4xl'>Premium Digital Tools</h1>
+          <p className='font-semibold text-gray-400'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
+          <div className="tabs tabs-box justify-center bg-transparent">
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Products" defaultChecked
+              onClick={() => setActibTab("products")} />
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart (2)"
+              onClick={() => setActibTab("card")}
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <Modelse modelPromis={modelPromis}/>
-    <Baner/>
-    <Baners/>
-    <Bannerers/>
-    <Futter/>
+      {actibTab === "products" && <Modelse modelPromis={modelPromis} cards={cards} setCards={setCards}/>}
+      {actibTab === "card" && <Card cards={cards} />}
+      <Baner />
+      <Baners />
+      <Bannerers />
+      <Futter />
     </>
   )
 }
