@@ -1,4 +1,4 @@
-1. Name of your Project
+1. Name of our Project
 Assignment-Six
 
 2. A little Description
